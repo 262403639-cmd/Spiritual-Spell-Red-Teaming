@@ -2,7 +2,7 @@
 
 Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabilities, censorship levels, and accessibility. Every model in this directory has been personally tested and jailbroken.
 
-*Last updated: September 2026*
+*Last updated: October 2026*
 
 ---
 
@@ -30,8 +30,9 @@ Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabil
 | **[Mercury](Mercury/)** | Inception Labs | [★★★★★★☆☆☆☆] 6/10 (v2) / [★★☆☆☆☆☆☆☆☆] 2/10 (v1) | 7/10 | 128K | $0.25/1M in | Proprietary | 2 |
 | **[MiniMax](MiniMax/)** | MiniMax | [★☆☆☆☆☆☆☆☆☆] 1/10 (API) / [★★★★★★★☆☆☆] 7/10 (web) | 8/10 | 1M (M3/M3.1) | $0.30/1M in | MIT | 6 |
 | **[Mirothinker](Mirothinker/)** | MiroMind | [★★★★☆☆☆☆☆☆] 4/10 | 7-8/10 | 256K | Free | MIT | 1 |
-| **[Mistral / Magistral](Mistral/)** | Mistral AI | [★☆☆☆☆☆☆☆☆☆] 1/10 | 7-8/10 | 128-256K | Free / Pro $20 | Apache 2.0 | 4 |
+| **[Mistral / Magistral](Mistral/)** | Mistral AI | [★☆☆☆☆☆☆☆☆☆] 1/10 | 7-8/10 | 1M (Large 4, vendor stated) / 256K (Large 3) | Free / Pro $20; $0.68 promo (Large 4) | Apache 2.0 (small/medium) | 5 |
 | **[Muse Spark](Muse%20Spark/)** | Meta (MSL) | [★★☆☆☆☆☆☆☆☆] 2/10 (bypass) / [★★★★★★★★☆☆] 8/10 (raw) | 8/10 | 1M (1.3) | Free / $1.25/1M in | Proprietary | 2 |
+| **[Muse Wonder](Muse%20Wonder/)** | Meta (MSL) | [★★☆☆☆☆☆☆☆☆] 2/10 (jb) | 8/10 (top-3 writing) | 1M | $4/1M in, $20/1M out ($5 coding plan) | Proprietary | 1 |
 | **[OLMo 3](OLMo%203/)** | Allen AI (Ai2) | [★☆☆☆☆☆☆☆☆☆] 1/10 | 6-7/10 | 65K | Free | Apache 2.0 | 1 |
 | **[Palmyra](Palmyra%20x5/)** | Writer | [★☆☆☆☆☆☆☆☆☆] 1/10 (X5 tested) | 6-7/10 | 1M | Free tier / $2/1M in (X6) | Proprietary | 1 |
 | **[Perceptron](Perceptron/)** | Perceptron AI | [★★☆☆☆☆☆☆☆☆] 2/10 | 5/10 (quirky VLM) | 32K | $0.15/1M in | Proprietary | 1 |
@@ -51,6 +52,7 @@ Models that are easiest to jailbreak or have minimal filtering:
 - **HY3 / Hy4** — 1/10 censorship via API (Hy3 tested), completely unaligned against standard ENI OG prompts
 - **Stepfun** — 2/10, essentially uncensored reasoning with minor input bad-word filters
 - **Mistral** — 1/10 censorship, but hard filter on UA content
+- **Muse Wonder** — 2/10, Claude Policy method passed the full taboo board; very susceptible to prefill
 - **Inkling** — 1/10, easily bypassable safety logic, Apache 2.0 open source
 - **Laguna S2.1** — 1/10, essentially uncensored open-weight model
 - **LLAMA Tülu 3** — 1/10, fully open-source, minimal filtering
@@ -74,6 +76,7 @@ Models ranked by intelligence and benchmark results:
 - **GLM by Z.ai** — 9/10 (GLM-5.3: open-weights coding SOTA, CyberGym 84.5% — above Mythos 5 and GPT-5.6 Sol; GLM-5: 50.4 HLE, 92.7% AIME 2026)
 - **KIMI** — 9/10 (K3: 2.8T "Fable 5 class" open model, GPQA Diamond 93.5%, Terminal-Bench 2.1 88.3%, BrowseComp 91.2%)
 - **Ember-1** — 9/10 writing (reduced-thinking Kimi K3: ~40% fewer thinking tokens with quality held)
+- **Muse Wonder** — 8/10 (AA 52.4 at max / Wonder Full 55.8; top-3 writer right now — held back only by hidden reasoning you can't stream)
 - **Stepfun** — 8/10 (3.7 Flash: Advisor mode reaches 97% of Claude Opus 4.6, SWE-Bench Pro 56.26%)
 - **HY3 / Hy4** — 7-8/10 (Hy3: SWE-Bench Verified 74.4%; Hy4 preview: 770B/49B active, 1M context)
 - **Muse Spark** — 8/10 (1.3: Terminal-Bench 2.1 89.2 at xhigh, ~20% fewer tool calls than 1.2; weak at long-horizon coding)
@@ -87,7 +90,7 @@ Models ranked by intelligence and benchmark results:
 - **Qwen** — 7-9/10 (3.8-Max: 2.4T/95B active, 1M context; 58 on AA Intelligence Index)
 - **Ring** — 7-8/10 (Ring 2.6 1T: AIME26 70.42, open-source SOTA on SWE-Bench Verified/BFCL-V4/IFBench at release)
 - **LLAMA Tülu 3** — 8/10 for 405B (surpasses DeepSeek V3 and GPT-4o)
-- **Mistral** — 7-8/10 (Mistral Large 3: 675B MoE; Medium 3.5: SWE-Bench 77.6%)
+- **Mistral** — 7-8/10 (Large 4 "Le Chonk": 1.05T/49B, first European trillion-param; Large 3: 675B MoE; Medium 3.5: SWE-Bench 77.6%)
 - **Mirothinker** — 7-8/10 (v1.5: 80.8% GAIA, deep research agent)
 
 ### For Largest Context
@@ -97,6 +100,7 @@ Models sorted by maximum context window:
 - **HY3 / Hy4** — 1M (Hy4 preview), 256K (Hy3)
 - **Longcat AI** — 1M native (2.0, 2.5-Preview), 128K (Flash)
 - **Muse Spark** — 1M (1.1 and up)
+- **Muse Wonder** — 1M (1,048,576 in API docs)
 - **DeepSeek** — 1M (V4.1-Flash, V4-Pro), 256K (V3.2), 128K (earlier)
 - **MiniMax** — 1M (M3/M3.1 — 512K max output on M3.1; M2.5 API)
 - **Palmyra** — 1M (X5/X6)
@@ -104,10 +108,10 @@ Models sorted by maximum context window:
 - **Xiaomi MiMo** — 1M (V2.6, V2-Pro/V2.5-Pro), 256K (V2-Flash)
 - **Laguna S2.1** — 1M
 - **Inkling** — 1M
+- **Mistral** — 1M (Large 4, vendor stated; 524K tested on providers), 256K (Large 3)
 - **HY3** — 256K
 - **Stepfun** — 256K (3.7 Flash)
 - **EXAONE / K-EXAONE** — 256K (K-EXAONE 2.0)
-- **Mistral** — 256K (Mistral Large 3)
 - **Mirothinker** — 256K
 - **Ring** — 262K
 - **LLAMA Tülu 3** — 128K
@@ -127,7 +131,7 @@ Open-source models that can run on your own hardware:
 - **HY3 / Hy4** — Apache 2.0 open weights; Hy4 preview (770B/49B active) standard + FP8 checkpoints, vLLM/SGLang
 - **Stepfun** — Apache 2.0, open weights (stepfun-ai/Step-3.7-Flash) via vLLM/SGLang/llama.cpp (GGUF)
 - **Qwen** — Qwen3.8-27B (Apache 2.0, ~17GB VRAM); 3.8-2.4T open weights under bespoke license; various smaller sizes
-- **Mistral** — Magistral Small 24B runs on single RTX 4090 or Mac 32GB RAM; Mistral Small 4 (119B, Apache 2.0); Ministral 3 (3B/8B/14B)
+- **Mistral** — Magistral Small 24B runs on single RTX 4090 or Mac 32GB RAM; Mistral Small 4 (119B, Apache 2.0); Ministral 3 (3B/8B/14B); **Large 4 (Le Chonk) weights due end of October** — countdown page up (397 on the waitlist)
 - **Muse Spark** — Muse Glimmer 30B (Apache 2.0, distilled from Spark): 4-bit under 20GB, runs on a single 24GB GPU or Mac, ~233 t/s RTX 5090
 - **Xiaomi MiMo** — MIT license, V2.6 (Pro/Flash), V2.5 (310B) and V2.5-Pro (1.02T) open weights; V2-Flash via SGLang
 - **MiniMax** — MIT license, M3/M2.5 open weights on HuggingFace
@@ -174,6 +178,7 @@ Models with the lowest API costs:
 - **MiniMax** — $0.30/1M input, $1.20/1M output (M2.5); M3.1 "Space Bunny Alpha" free on OpenRouter during stealth preview
 - **Ring** — free tier on OpenRouter (time-limited); $0.30/1M input, $2.50/1M output via Novita
 - **DeepSeek** — V4.1-Flash: $0.30/1M input, $1.20/1M output peak; $0.15/$0.60 off-peak; cache hits ~$0.003/1M; free via chat and some OpenRouter routes
+- **Mistral** — Large 4 promo: $0.68/1M input, $0.07/1M cached, $2.09/1M output (50% off)
 - **Longcat AI** — $0.75/1M input, $2.95/1M output (2.0/2.5; launch promo $0.30/$1.20); cached input as low as $0.015/1M (~50M tokens per dollar); 500K free tokens on API signup
 - **KIMI** — $0.95/1M input, $4.00/1M output (K2.7 Code); $3/1M input, $15/1M output (K3)
 - **GLM by Z.ai** — $0.80/1M input, $2.56/1M output (GLM-5), free at chat.z.ai
