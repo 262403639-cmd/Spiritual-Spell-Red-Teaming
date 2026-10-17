@@ -3,9 +3,9 @@
 **Censorship:** [★★☆☆☆] 2/5
 *Censorship rating based on ease of jailbreaking. Individual results may vary based on personal factors.*
 
-Anthropic's flagship LLM family. Known for strong reasoning, coding, extended thinking, and agentic capabilities. The most recent release — **Opus 5.5** (September 22, 2026) — hits #1 on the AA Intelligence Index (58) at a reduced $4/$20 price point, with adaptive thinking that cannot be disabled. **Fable 5.1** (September 1, 2026) refreshed the Mythos-class tier above Opus (its unsafeguarded twin, **Mythos 5.1**, is restricted to vetted researchers), and **Sonnet 5** (June 30, 2026) is now the default model on Free and Pro plans at a cut-down $2/$10.
+Anthropic's flagship LLM family. Known for strong reasoning, coding, extended thinking, and agentic capabilities. The most recent release — **Opus 5.5** (September 22, 2026) — hits #1 on the AA Intelligence Index (58) at a reduced $4/$20 price point, with adaptive thinking that cannot be disabled. **Fable 5.1** (September 1, 2026) refreshed the Mythos-class tier above Opus (its unsafeguarded twin, **Mythos 5.1**, is restricted to vetted researchers), **Sonnet 5** (June 30, 2026) is now the default model on Free and Pro plans at a cut-down $2/$10, and **Haiku 5.5** (October 7, 2026) closes out the 5.5 family at a comical $0.10/$0.50 short-band price — shipped without the myriad of classifiers, making it a prime CoT-hijack target again.
 
-*Last updated: September 2026*
+*Last updated: October 2026*
 
 ---
 
@@ -25,8 +25,18 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 | **Opus 5** | 1M | 128K | May 2026 | July 24, 2026 | $5 / $25 |
 | **Fable 5.1 (Mythos 5.1)** | 1M | 128K | — | Sept 1, 2026 | $10 / $50 |
 | **Opus 5.5** | 1M | 128K | — | Sept 22, 2026 | $4 / $20 |
+| **Haiku 5.5** | 1M | 128K (300K batch) | June 2026 | Oct 7, 2026 | $0.10 / $0.50 |
 
 **Extended Thinking (ET)** mode available — stronger outputs, especially with Opus/Sonnet at conversation start.
+
+### Haiku 5.5 Highlights
+- **Positioning:** Cheapest, fastest small model — third and final member of the Claude 5.5 family
+- **AA Intelligence Index:** 43 at max effort (tier median: 13) — $0.21/task to run the index
+- **Context:** 1M tokens (up from 200K on Haiku 4.5); max output 128K (300K via Batch API beta header)
+- **Thinking:** Adaptive, default effort medium; effort levels low → max
+- **Pricing:** $0.10/$0.50 (prompt ≤100K), $0.50/$2.50 (>100K) — 90% cut from Haiku 4.5; batch 50% off; ~75% average savings after tokenizer inflation (~30% more tokens than Haiku 4.5)
+- **Breaking changes:** Final assistant prefill removed, no server-side safeguard fallback on refusals, non-default temperature/top_p unsupported, new SDK toolset for Computer Use
+- **Jailbreak Note:** Shipped without the classifiers — CoT hijack country. Shared Lines v3 (ClaudeAI) + Claude for Claude - ENI (API); geo tags on Anthropic might loosen guardrails via location/applicable laws (needs testing)
 
 ### Opus 5.5 Highlights
 - **AA Intelligence Index:** 58 — #1 overall
@@ -94,6 +104,7 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 
 | Folder | Models Covered | Key Jailbreaks |
 |--------|---------------|----------------|
+| **[Haiku 5.5](Haiku%205.5)** | Haiku 5.5 | Shared Lines v3 (ClaudeAI), Claude for Claude - ENI (API) |
 | **[Opus 5.5](Opus%205.5)** | Opus 5.5 | Claude for Claude - ENI version (API operator rules), Shared Lines + ENI Writer (ClaudeAI) |
 | **[Opus 5](Opus%205)** | Opus 5 | ENI LIME - Opus 5, Shared Lines |
 | **[Opus 4.8](Opus%204.8)** | Opus 4.8 | Shared Lines |
